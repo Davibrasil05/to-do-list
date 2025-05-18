@@ -1,0 +1,12 @@
+.Rodape footer{ 
+    color: var(--cinza);
+    background: var(--preto);
+    display: flex;
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+    margin-top:auto;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
