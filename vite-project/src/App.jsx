@@ -1,6 +1,7 @@
 
 import './App.css'
 import {Cabecalho, Conteudo, Rodape} from './components'
+import {Inicial} from './pages'
 
 const App = ()  => {
   //O <> É a fragmentação dos arquivos
@@ -9,11 +10,9 @@ const App = ()  => {
 
       <Cabecalho nomeusuario = "Davi"/>
       <Conteudo>
-        <h1 >Titulo</h1>
-        <p>Texto exto texto</p>
+        <Inicial/>
       </Conteudo>
-      <Rodape criador = "Davi" >     
-      </Rodape>
+      <Rodape criador = "Davi" />     
     </>
   )
 }
