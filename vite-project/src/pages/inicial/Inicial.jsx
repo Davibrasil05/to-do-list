@@ -1,11 +1,13 @@
-import { FormCriarTarefa} from "../../components"
-
-const Inicial = () =>{
+import { FormCriarTarefa, ListaTarefas} from "../../components"
+import style from "./Inicial.module.css"
+const Inicial = () => {
     return(
         <>
-            <FormCriarTarefa/>
+            <div className = {style.Inicial}>
+                <FormCriarTarefa/>
+                <ListaTarefas/>
+            </div>
         </>
     )
-
 }
 export {Inicial}
