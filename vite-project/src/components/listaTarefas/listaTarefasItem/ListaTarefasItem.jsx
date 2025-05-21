@@ -1,10 +1,9 @@
-import { Botao } from "../../botao"
-import { TIPO_BOTAO } from "../../botao"
-
+import { Botao, TIPO_BOTAO } from "../../botao"
+import style from "./ListaTarefasItem.module.css"
 const ListaTarefasItem = (props) => {
     const {nome} = props
     return(
-        <li>
+        <li className = {style.ListaTarefasItem}>
             {nome} 
             <Botao texto = "-" tipo = {TIPO_BOTAO.SECUNDARIO}/>
         </li>

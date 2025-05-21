@@ -1,14 +1,16 @@
 import style from "./ListaTarefas.module.css"
 import { ListaTarefasItem } from "./listaTarefasItem"
 const ListaTarefas = () =>{
+    const tarefas = [
+        {id: 1, nome: "item 1"},
+        {id: 2, nome: "item 2"},
+        {id: 3, nome: "item 3"}
+
+    ]
     return(
-        <div >
             <ul className = {style.ListaTarefas}>
-                <ListaTarefasItem nome = "nome1"/>
-                <ListaTarefasItem nome = "nome2"/>
-                <ListaTarefasItem nome = "nome3"/>
+                {tarefas.map(item => <ListaTarefasItem key = {item.id} nome = {item.nome }/>)}
             </ul>
-        </div>
     )
 }
 
