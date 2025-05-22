@@ -1,12 +1,17 @@
+import { Link } from "react-router-dom"
 import style from "./Cabecalho.module.css"
 
 const Cabecalho = (props) => {
     return(
         <div className = {style.Cabecalho}>
-            <h1>
-                <span>ToDo </span>
-                 list
-            </h1>
+            <Link to = "/">
+                <h1>
+                    <span>ToDo </span>
+                    list
+                </h1>
+            </Link>
+
+            <Link to = "/sobre-nos"> Sobre Nos</Link>
         </div>
     )
 }
