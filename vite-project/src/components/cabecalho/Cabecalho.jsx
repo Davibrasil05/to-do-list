@@ -11,7 +11,7 @@ const Cabecalho = (props) => {
                 </h1>
             </Link>
 
-            <Link to = "/sobre-nos"> Sobre Nos</Link>
+            <Link to = "/sobre-nos"> Sobre Nós</Link>
         </div>
     )
 }

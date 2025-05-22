@@ -10,11 +10,6 @@ const App = ()  => {
   return (
     <BrowserRouter>
         <Router/>
-      {/*<Cabecalho nomeusuario = "Davi"/>
-      <Conteudo>
-        <Inicial/>
-      </Conteudo>
-      <Rodape criador = "Davi" />*/}  
     </BrowserRouter>
   )
 }
