@@ -5,7 +5,7 @@ const Erro404 =  () => {
         <>
             <div className = {style.Erro404}>
                 <h1>404</h1>
-                <p>Pagina nao encontrada</p>
+                <p>Página não encontrada</p>
             </div>
         </>
     )
