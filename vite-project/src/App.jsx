@@ -1,16 +1,18 @@
 
 import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-import {Cabecalho, Conteudo, Rodape} from './components'
-import {Inicial} from './pages'
+
 import {Router} from './Router'
+import { AppContextProvider } from './contexts'
 
 const App = ()  => {
   //O <> É a fragmentação dos arquivos
   return (
-    <BrowserRouter>
-        <Router/>
-    </BrowserRouter>
+    <AppContextProvider>
+      <BrowserRouter>
+          <Router/>
+      </BrowserRouter>
+    </AppContextProvider>
   )
 }
 
