@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom"
 import { Cabecalho, Conteudo, Rodape } from "../../components"
-import { useContext } from "react"
-import { AppContext } from "../../contexts"
+import {useAppContext} from "../../hooks"
 const LayoutPadrao = () => {
-    const {criador } = useContext(AppContext)
+    const {criador } = useAppContext()
     return (
 
         <>
